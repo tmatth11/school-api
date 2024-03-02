@@ -100,8 +100,7 @@ class StudentIntegrationTest {
 
         mockMvc.perform(MockMvcRequestBuilders
                         .get("/student/99999"))
-                .andExpect(status().isNotFound())
-                .andReturn();
+                .andExpect(status().isNotFound());
     }
 
     @Test
@@ -150,8 +149,6 @@ class StudentIntegrationTest {
 
         mockMvc.perform(MockMvcRequestBuilders
                         .delete("/student/98237"))
-                .andExpect(status().isNoContent())
-                .andReturn();
-
+                .andExpect(status().isNoContent());
     }
 }
