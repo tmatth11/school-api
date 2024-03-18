@@ -20,9 +20,9 @@ public class SchoolApplication {
 	@PostConstruct
 	public List<Student> initTable() {
 		List<Student> list = studentRepository.saveAll(List.of(
-				new Student(12345, "Roger Fereder", "Art", 4),
-				new Student(43632, "Rafael Nadal", "Physics", 3),
-				new Student(23095, "Novak Djokovic", "Chemistry", 2)
+				new Student(12345, "Emily Blunt", "Art", 4),
+				new Student(43632, "Rebecca Ferguson", "Physics", 3),
+				new Student(23095, "Jennifer Lawrence", "Biology", 2)
 				));
 		return list;
 	}
